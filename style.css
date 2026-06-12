@@ -1,0 +1,133 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg,
+            #c7e9f1 0%,
+            #dcecf5 50%,
+            #f8d9e8 100%);
+
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* LINK */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: 25px;
+    text-align: center;
+}
+
+/* TITLE */
+.title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+
+    color: white;
+
+    -webkit-text-stroke: 3px black;
+
+    text-shadow:
+        3px 3px 0 black,
+        6px 6px 0 rgba(0, 0, 0, 0.15);
+
+    letter-spacing: 1px;
+}
+
+.title .orange {
+    color: #ff7a5c;
+}
+
+/* CARD */
+.card {
+    background: linear-gradient(135deg,
+            #d8c6ea,
+            #e6d9f4);
+
+    padding: 18px;
+    margin: 18px 0;
+    border-radius: 30px;
+
+    box-shadow: 0 6px 0 #b79ccf;
+
+    text-align: left;
+    position: relative;
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 0 #b79ccf;
+}
+
+/* BUBBLE */
+.card::before {
+    content: '';
+    position: absolute;
+
+    top: 10px;
+    left: 10px;
+
+    width: 12px;
+    height: 12px;
+
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+/* JUDUL CARD */
+.card h3 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+}
+
+/* TEXT */
+.card p,
+.card li {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* LIST */
+.card ul {
+    padding-left: 18px;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 34px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
